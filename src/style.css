@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root{
+  --snow-color: rgba(255,255,255,.9);
+  --snow-color-2: rgba(255,255,255,.7);
+  --snow-color-3: rgba(255,255,255,.5);
+}
+
+body{
+  background: linear-gradient(180deg, #0b1f2b 0%, #15384a 60%, #235a6b 100%);
+}
+
+.snow{
+  position:absolute; inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 20%, var(--snow-color) 99%, transparent 100%),
+    radial-gradient(2px 2px at 80% 30%, var(--snow-color) 99%, transparent 100%),
+    radial-gradient(2px 2px at 40% 80%, var(--snow-color) 99%, transparent 100%),
+    radial-gradient(2px 2px at 60% 60%, var(--snow-color) 99%, transparent 100%),
+    radial-gradient(1.6px 1.6px at 10% 50%, var(--snow-color-2) 99%, transparent 100%),
+    radial-gradient(1.6px 1.6px at 70% 10%, var(--snow-color-2) 99%, transparent 100%),
+    radial-gradient(1.6px 1.6px at 30% 40%, var(--snow-color-2) 99%, transparent 100%),
+    radial-gradient(1.6px 1.6px at 90% 70%, var(--snow-color-2) 99%, transparent 100%),
+    radial-gradient(1px 1px at 25% 85%, var(--snow-color-3) 99%, transparent 100%),
+    radial-gradient(1px 1px at 55% 15%, var(--snow-color-3) 99%, transparent 100%),
+    radial-gradient(1px 1px at 85% 55%, var(--snow-color-3) 99%, transparent 100%),
+    radial-gradient(1px 1px at 45% 35%, var(--snow-color-3) 99%, transparent 100%);
+  background-size:
+    400px 400px, 400px 400px, 400px 400px, 400px 400px,
+    300px 300px, 300px 300px, 300px 300px, 300px 300px,
+    250px 250px, 250px 250px, 250px 250px, 250px 250px;
+  background-repeat: repeat;
+  filter: drop-shadow(0 0 2px #fff);
+  animation:
+    fall-1 18s linear infinite,
+    fall-2 28s linear infinite,
+    fall-3 40s linear infinite;
+}
+
+/* On décale les couches pour créer la profondeur */
+@keyframes fall-1{
+  from{ background-position:
+    0px   -0px,  200px -0px,  100px -0px,  300px -0px,
+    0px   -0px,  150px -0px,  50px  -0px,  250px -0px,
+    0px   -0px,  120px -0px,  60px  -0px,  200px -0px; }
+  to{   background-position:
+    -60px 700px, 140px 700px,  40px 700px,  240px 700px,
+    -40px 700px, 110px 700px, -10px 700px,  190px 700px,
+    -20px 700px, 100px 700px,  40px 700px,  180px 700px; }
+}
+
+/* Légèrement plus lent + autre drift */
+@keyframes fall-2{
+  from{ background-position:
+    0px   -0px,  200px -0px,  100px -0px,  300px -0px,
+    0px   -0px,  150px -0px,  50px  -0px,  250px -0px,
+    0px   -0px,  120px -0px,  60px  -0px,  200px -0px; }
+  to{   background-position:
+    -40px 1000px, 120px 1000px,  20px 1000px,  200px 1000px,
+    -20px 1000px, 100px 1000px,   0px 1000px,  160px 1000px,
+    -10px 1000px, 90px 1000px,   30px 1000px,  150px 1000px; }
+}
+
+/* Encore plus lent pour le fond */
+@keyframes fall-3{
+  from{ background-position:
+    0px   -0px,  200px -0px,  100px -0px,  300px -0px,
+    0px   -0px,  150px -0px,  50px  -0px,  250px -0px,
+    0px   -0px,  120px -0px,  60px  -0px,  200px -0px; }
+  to{   background-position:
+    -20px 1400px, 100px 1400px,  10px 1400px,  160px 1400px,
+    -10px 1400px,  80px 1400px,  10px 1400px,  140px 1400px,
+     0px  1400px,  70px 1400px,  20px 1400px,  120px 1400px; }
+}
