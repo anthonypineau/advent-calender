@@ -1,34 +1,6 @@
 <script setup>
-import { ref } from 'vue'
 import SlidingCard from '../components/SlidingCard.vue'
 import ChristmasCountdown from '../components/ChristmasCountdown.vue'
-
-const items = ref([
-  { message: 'Foo' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Foo' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-  { message: 'Bar' },
-])
 </script>
 
 <template>
