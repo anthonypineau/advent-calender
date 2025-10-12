@@ -3,6 +3,15 @@ import { ref, computed, onMounted, nextTick } from 'vue'
 
 const props = defineProps(['dayNumber'])
 
+const base = import.meta.env.BASE_URL // ✅ récupéré côté script
+
+const leftDoorSrc = computed(
+  () => `${base}assets/doors/left/day${props.dayNumber}.png`
+)
+const rightDoorSrc = computed(
+  () => `${base}assets/doors/right/day${props.dayNumber}.png`
+)
+
 const isOpen = ref(false)
 const date = new Date()
 const month = date.getMonth()
@@ -104,10 +113,7 @@ async function openCard(event) {
         class="door-left absolute top-0 left-0 w-1/2 h-full bg-primary transition-transform duration-700 ease-in-out"
         :class="isOpen ? '-translate-x-full' : 'translate-x-0'"
       >
-        <img
-          class="w-full h-full object-cover"
-          :src="`/assets/doors/left/day${dayNumber}.png`"
-        />
+        <img class="w-full h-full object-cover" :src="leftDoorSrc" />
       </div>
 
       <!-- Volet droit -->
@@ -115,10 +121,7 @@ async function openCard(event) {
         class="door-right absolute top-0 right-0 w-1/2 h-full bg-secondary transition-transform duration-700 ease-in-out"
         :class="isOpen ? 'translate-x-full' : 'translate-x-0'"
       >
-        <img
-          class="w-full h-full object-cover"
-          :src="`/assets/doors/right/day${dayNumber}.png`"
-        />
+        <img class="w-full h-full object-cover" :src="rightDoorSrc" />
       </div>
 
       <!-- Contenu intérieur -->
