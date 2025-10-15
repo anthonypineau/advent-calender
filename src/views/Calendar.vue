@@ -6,8 +6,6 @@ import ChristmasCountdown from '../components/ChristmasCountdown.vue'
 <template>
   <header><ChristmasCountdown /></header>
   <main class="max-w-7xl mx-auto py-4">
-    <!-- <div class="grid grid-cols-2 gap-6 p-6 bg-base-200 min-h-screen"> -->
-    <!-- <div class="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-4 justify-items-center"> -->
     <div
       class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 justify-items-center"
     >
