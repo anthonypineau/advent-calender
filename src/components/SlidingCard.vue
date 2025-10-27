@@ -52,8 +52,15 @@ onMounted(() => {
   }
 })
 
+const openLinkURL = `https://www.lernsax.de/l.php?files%7Clehrer%40gstrebra.lernsax.de%7C%2FAdventskalender%2F${props.dayNumber}.%20Dezember%7C/`
+
 async function openCard(event) {
-  if (!isUnlocked.value || isOpen.value) return
+  if (!isUnlocked.value) return
+
+  if (isOpen.value === true) {
+    window.open(openLinkURL, '_blank', 'noopener,noreferrer')
+    return
+  }
 
   isOpen.value = true
 
@@ -77,12 +84,9 @@ async function openCard(event) {
   const delay = parseFloat(style.transitionDelay) * 1000
 
   const total = duration + delay + 100
+
   setTimeout(() => {
-    window.open(
-      'https://www.sachsen.schule/~gs-marienberg/',
-      '_blank',
-      'noopener,noreferrer'
-    )
+    window.open(openLinkURL, '_blank', 'noopener,noreferrer')
   }, total)
 }
 </script>
@@ -118,7 +122,7 @@ async function openCard(event) {
         class="bg-white text-black absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 delay-200"
         :class="isOpen ? 'opacity-100' : 'opacity-0'"
       >
-        <p class="text-lg font-bold">🎁 Surprise !</p>
+        <p class="text-lg font-bold">🎁 Tag {{ dayNumber }} !</p>
       </div>
     </div>
   </div>
