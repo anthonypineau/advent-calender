@@ -36,11 +36,13 @@ onUnmounted(() => {
 
 <template>
   <div class="flex flex-col items-center gap-6">
-    <h2 class="text-2xl font-bold text-primary">
+    <h2 class="text-2xl font-bold text-primary text-center">
       🎅 Countdown bis Weihnachten 🎄
     </h2>
 
-    <div class="grid grid-flow-col gap-10 text-center auto-cols-max">
+    <div
+      class="grid grid-flow-col gap-10 text-center auto-cols-max max-sm:grid-rows-2"
+    >
       <div>
         <span class="countdown font-mono text-6xl">
           <span :style="{ '--value': days }"></span>

@@ -7,7 +7,7 @@ import ChristmasCountdown from '../components/ChristmasCountdown.vue'
   <header><ChristmasCountdown /></header>
   <main class="max-w-7xl mx-auto py-4">
     <div
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 justify-items-center"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 justify-items-center"
     >
       <SlidingCard v-for="n in 24" :key="n" :dayNumber="n" />
     </div>

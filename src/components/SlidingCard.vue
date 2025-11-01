@@ -18,7 +18,7 @@ const month = date.getMonth()
 const today = date.getDate()
 
 // changer à 11 pour décembre
-const isUnlocked = computed(() => month === 9 && today >= props.dayNumber)
+const isUnlocked = computed(() => month === 10 && today >= props.dayNumber)
 
 function setCookie(name, value, expires) {
   document.cookie = `${name}=${encodeURIComponent(

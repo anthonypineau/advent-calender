@@ -17,7 +17,9 @@
         Projektarbeit erstellt im Rahmen der Schule: 🧑‍🏫
         Heinrich-von-Trebra-Grundschule Marienberg <br />
         Betreuer / Entwickler: Anthony Pineau <br />
-        E-Mail: (bitte eintragen) <br />
+        E-Mail:
+        <a href="mailto:anthonypineau@outlook.de">anthonypineau@outlook.de</a
+        ><br />
         Anschrift: Grundschule "Heinrich von Trebra" Silberallee 22 09496
         Marienberg <br />
         Hosting-Anbieter: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San
