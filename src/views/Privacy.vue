@@ -16,9 +16,10 @@
         Name der Website: Interaktiver Adventskalender <br />
         Projektarbeit erstellt im Rahmen der Schule: 🧑‍🏫
         Heinrich-von-Trebra-Grundschule Marienberg <br />
-        Betreuer / Entwickler: Anthony Pineau <br />
+        Betreuer / Entwickler: Antonia Hammer (Anthony Pineau) <br />
         E-Mail:
-        <a href="mailto:anthonypineau@outlook.de">anthonypineau@outlook.de</a
+        <a href="mailto:antonia.hammer@gstrebra.lernsax.de"
+          >antonia.hammer@gstrebra.lernsax.de</a
         ><br />
         Anschrift: Grundschule "Heinrich von Trebra" Silberallee 22 09496
         Marienberg <br />
@@ -100,7 +101,9 @@
       <p>
         Bei Fragen zum Datenschutz oder zu dieser Website wenden Sie sich bitte
         an:
-        <a href="mailto:anthonypineau@outlook.de">anthonypineau@outlook.de</a>
+        <a href="mailto:antonia.hammer@gstrebra.lernsax.de"
+          >antonia.hammer@gstrebra.lernsax.de</a
+        >
       </p>
 
       <h2 class="text-xl font-semibold mt-4">
