@@ -17,7 +17,6 @@ const date = new Date()
 const month = date.getMonth()
 const today = date.getDate()
 
-// changer à 11 pour décembre
 const isUnlocked = computed(() => month === 10 && today >= props.dayNumber)
 
 function setCookie(name, value, expires) {
@@ -52,7 +51,7 @@ onMounted(() => {
   }
 })
 
-const openLinkURL = `https://www.lernsax.de/l.php?files%7Clehrer%40gstrebra.lernsax.de%7C%2FAdventskalender%2F${props.dayNumber}.%20Dezember%7C/`
+const openLinkURL = `https://www.lernsax.de/l.php?files%7Cinfo%40gstrebra.lernsax.de%7C%2FAdventskalender%2F${props.dayNumber}.%20Dezember%7C/`
 
 async function openCard(event) {
   if (!isUnlocked.value) return
